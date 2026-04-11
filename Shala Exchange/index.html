@@ -1,0 +1,68 @@
+
+<!DOCTYPE html
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shala Exchange</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>Shala Exchange</h1>
+    <nav>
+      <a href="#markets">Markets</a>
+      <a href="#">Login</a>
+      <a href="#" class="btn">Get Started</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Simple. Secure. Professional.</h2>
+    <p>A modern crypto exchange interface built with focus and clarity.</p>
+
+    <div class="prices">
+      <div class="price-card">
+        <span>BTC / USD</span>
+        <strong id="btc">Loading...</strong>
+      </div>
+      <div class="price-card">
+        <span>ETH / USD</span>
+        <strong id="eth">Loading...</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="markets" class="markets">
+    <h3>Markets</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Asset</th>
+          <th>Price (USD)</th>
+          <th>24h Change</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>BTC</td>
+          <td id="btc-table">—</td>
+          <td id="btc-change">—</td>
+        </tr>
+        <tr>
+          <td>ETH</td>
+          <td id="eth-table">—</td>
+          <td id="eth-change">—</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Shala Exchange. MVP Interface.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

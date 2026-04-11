@@ -1,0 +1,37 @@
+/* Luxurious digital theme for Shala Webs chat */
+:root{
+--bg:#0b0f17;
+--card:#0f1724;
+--accent:#7a5cff;
+--accent-2:#4f7df9;
+--gold:#d4af37;
+--muted:#94a3b8;
+--glass:rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,#03040a,#0b0f17);color:#e6eef8}
+#app{max-width:1100px;margin:28px auto;display:grid;grid-template-columns:320px 1fr;gap:24px;padding:18px}
+.panel{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border-radius:16px;padding:18px;border:1px solid rgba(255,255,255,0.04);backdrop-filter:blur(6px)}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:56px;height:56px;border-radius:12px;object-fit:cover;box-shadow:0 6px 18px rgba(79,125,249,0.12)}
+.brand h1{margin:0;font-size:18px}
+.tag{color:var(--muted);margin:0;font-size:13px}
+.meta{margin-top:14px;color:var(--muted);font-size:14px}
+.meta-item{margin:8px 0}
+.info{margin-top:14px;color:var(--muted);font-size:14px}
+.info button{margin-top:10px;padding:10px 12px;border-radius:10px;border:none;background:var(--accent-2);color:white;cursor:pointer}
+.chat{display:flex;flex-direction:column;gap:12px}
+.chat-header{display:flex;justify-content:space-between;align-items:center;padding:14px;background:linear-gradient(90deg,var(--accent),var(--accent-2));border-radius:12px;color:white;box-shadow:0 12px 40px rgba(79,125,249,0.18)}
+.chat-header .small{margin:0;font-size:13px;opacity:0.9}
+.status{font-weight:700}
+.messages{height:64vh;overflow:auto;padding:20px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);border:1px solid rgba(255,255,255,0.02)}
+.message{max-width:76%;padding:12px 14px;border-radius:12px;margin-bottom:12px;line-height:1.4}
+.message.me{margin-left:auto;background:linear-gradient(135deg,var(--accent-2),#5aa0ff);color:#041225;box-shadow:0 6px 20px rgba(79,125,249,0.12)}
+.message.bot{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.02);color:var(--muted)}
+.meta{font-size:12px;color:var(--muted);margin-top:8px}
+.typing{font-style:italic;color:var(--muted);padding:6px 12px}
+.composer{display:flex;gap:10px;padding:12px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);border-radius:12px}
+.composer input{flex:1;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+.composer select{padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+.composer button{padding:12px 18px;border-radius:10px;border:none;background:var(--gold);color:#091018;font-weight:700;cursor:pointer}
+@media (max-width:920px){#app{grid-template-columns:1fr}}

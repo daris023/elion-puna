@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shala Clothing - Cart</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="cart.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+  <h1>Shala Clothing</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#products">Shop</a>
+  </nav>
+</header>
+
+<section class="cart-section">
+  <h2>Your Cart</h2>
+  <div id="cart-items"></div>
+
+  <!-- Formspree Checkout -->
+  <div class="checkout">
+    <h3>Checkout</h3>
+    <form id="checkout-form" action="https://formspree.io/f/xykkkrbl" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="_replyto" placeholder="Email Address" required>
+      <input type="text" name="address" placeholder="Shipping Address" required>
+
+      <!-- Hidden fields for cart info -->
+      <input type="hidden" name="order_items" id="order_items">
+      <input type="hidden" name="total_price" id="total_price">
+
+      <button type="submit" class="btn">Place Order</button>
+    </form>
+    <p id="order-msg"></p>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Shala Clothing. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

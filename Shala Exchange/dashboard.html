@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shala Exchange Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <h1>Shala Exchange</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Markets</a>
+    <a href="#">Support</a>
+    <button id="logout" class="btn">Logout</button>
+  </nav>
+</header>
+
+<!-- DASHBOARD HERO -->
+<section class="hero">
+  <h2>Welcome to your Dashboard</h2>
+  <p>Live crypto prices, withdrawal requests, and alerts at your fingertips.</p>
+
+  <div class="prices">
+    <div class="price-card">
+      <span><i class="fas fa-bitcoin"></i> BTC / USD</span>
+      <strong id="btc">Loading...</strong>
+    </div>
+    <div class="price-card">
+      <span><i class="fas fa-ethereum"></i> ETH / USD</span>
+      <strong id="eth">Loading...</strong>
+    </div>
+  </div>
+</section>
+
+<!-- DASHBOARD CARDS -->
+<section class="dashboard">
+  <div class="cards">
+    <div class="card">
+      <span>Account Status</span>
+      <strong>Active</strong>
+    </div>
+    <div class="card">
+      <span>Email Alerts</span>
+      <strong>Enabled</strong>
+    </div>
+    <div class="card">
+      <span>Pending Withdrawals</span>
+      <strong id="pending">0</strong>
+    </div>
+  </div>
+
+  <!-- ACTIONS -->
+  <div class="actions">
+    <h3>Request Withdrawal</h3>
+    <input type="number" id="amount" placeholder="Amount (BTC)">
+    <button id="withdraw" class="btn">Submit</button>
+    <p id="msg"></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 Shala Exchange | Secure, Modern, Transparent</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Shala Webs — Talk with Daris</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.png">
+</head>
+<body>
+<div id="app">
+<aside class="panel">
+<div class="brand">
+<img src="logo.png" alt="Shala Webs" class="logo"/>
+<div>
+<h1>Shala Webs</h1>
+<p class="tag">Digital · Luxurious · Fast</p>
+</div>
+</div>
+
+
+<nav class="meta">
+<div class="meta-item"><strong>Agent:</strong> Daris</div>
+<div class="meta-item"><strong>Hours:</strong> Mon–Sat 09:00–18:00</div>
+<div class="meta-item"><strong>Contact:</strong> +355 69 000 0000</div>
+</nav>
+
+
+<div class="info">
+<h3>Welcome</h3>
+<p>Hi — I am Daris, your Shala Webs assistant. Ask about products, pricing, orders, or request a quote.</p>
+<button id="newConv">New Conversation</button>
+</div>
+</aside>
+
+
+<main class="chat">
+<header class="chat-header">
+<div>
+<h2>Talk with Daris</h2>
+<p class="small">Fast replies · Secure · Bilingual (AL/EN)</p>
+</div>
+<div class="status">Online</div>
+</header>
+
+
+<section id="messages" class="messages" aria-live="polite"></section>
+
+
+<div id="typing" class="typing"></div>
+
+
+<form id="composer" class="composer">
+<input id="inputMsg" placeholder="Type a message for Daris..." autocomplete="off" />
+<select id="language" title="Choose language">
+<option value="en">English</option>
+<option value="sq">Shqip</option>
+</select>
+<button type="submit">Send</button>
+</form>
+
+
+</main>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
